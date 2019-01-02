@@ -6,7 +6,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#eff",
-    "navigationBarTitleText": "个性名片",
+    "navigationBarTitleText": "Sync 名片",
     "navigationBarTextStyle":"black"
   }
 }
