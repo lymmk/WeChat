@@ -1,11 +1,18 @@
 /**index.wxss**/
 .container{
-width: 100%;
-height: 100%;
-padding: 5px;
+  position: relative;
+  margin: 5px;
+}
+
+.card image{
+  width: 100%;
+  border-radius: 5%;
 }
 
 .userinfo {
+  position: absolute;
+  top: 30px;
+  left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,10 +26,6 @@ padding: 5px;
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: rgb(44, 42, 42);
 }
 
-.card .bg{
-  width: 100%;
-  border-radius: 5%;
-}
