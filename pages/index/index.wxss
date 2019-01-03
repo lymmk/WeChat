@@ -7,6 +7,7 @@
 .card image{
   width: 100%;
   border-radius: 5%;
+  box-shadow: 0 0 5px #5F687E;
 }
 
 .userinfo {
@@ -15,23 +16,27 @@
   left: 20px;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  /* align-items:flex-start; */
+  align-items: center;
 }
 
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
-  border-radius: 50%;
+  border-radius: 15%;
 }
 
 .userinfo-nickname {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   color: rgb(44, 42, 42);
 }
 
 .userinfo-add{
-  margin-top: 48px;
-  position: relative;
+  position: absolute;
+  left: 24rpx;
+  bottom: 60rpx;
+  font-weight:bold;
+  color: rgb(44, 42, 42);
 }
 

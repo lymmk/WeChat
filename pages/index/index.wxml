@@ -1,14 +1,15 @@
 <!--index.wxml-->
 <view class='container'>
-  <view class="userinfo">
     <block wx:if="{{hasUserInfo}}">
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      <text class="userinfo-add">{{userInfo.country}}-{{userInfo.province}}-{{userInfo.city}}</text>
+      <view class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+      <text class="userinfo-add">Add : {{userInfo.country}}-{{userInfo.province}}-{{userInfo.city}}</text>
     </block>
-  </view>
   <view class="card">
       <image src='../../res/img/bg2.png' mode='widthFix' ></image>
   </view>
 </view>
 <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+<!-- <button wx:if="{{!hasUserPhone && canIUse}}" open-type="getPhoneNumber" bindgetphonenumber="getUserPhone"> 获取手机号 </button> -->

@@ -6,7 +6,9 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
+    userPhone:null,
     hasUserInfo: false,
+    hasUserPhone:false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
@@ -50,5 +52,16 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  // getUserPhone: function (e) {
+  //   console.log(e)
+  //   this.setData({
+  //     userPhone: e.detail.userInfo,
+  //     hasUserPhone: true
+  //   })
+  // },
+  onPullDownRefresh(){
+    //refresh page
+    wx.stopPullDownRefresh();
   }
 })
